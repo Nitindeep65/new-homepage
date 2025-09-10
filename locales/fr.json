@@ -1,0 +1,458 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Passer au contenu",
+      "close_modal": "Fermer (Esc)",
+      "close": "Fermer",
+      "learn_more": "Apprendre plus"
+    },
+    "meta": {
+      "tags": "Mots clés \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    },
+    "404": {
+      "title": "404 - Page non trouvée",
+      "subtext_html": "Cette page n'est pas disponible. <a href='{{ url }}'>Retourner au magasinage<\/a>"
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant"
+    },
+    "password_page": {
+      "login_form_heading": "Accéder à la boutique à l'aide d'un mot de passe:",
+      "login_form_password_label": "Mot de passe",
+      "login_form_password_placeholder": "Votre mot de passe",
+      "login_form_submit": "Entrer",
+      "signup_form_email_label": "Courriel",
+      "signup_form_success": "Nous vous ferons parvenir un Email juste avant l'ouverture!",
+      "admin_link_html": "Êtes-vous le propriétaire de la boutique? <a href=\"\/admin\" class=\"text-link\">Connectez-vous ici<\/a>.",
+      "password_link": "Mot de passe",
+      "powered_by_shopify_html": "Cette boutique sera produite par {{ shopify }}"
+    },
+    "breadcrumbs": {
+      "home": "Accueil",
+      "home_link_title": "Retour à la page d'accueil"
+    },
+    "social": {
+      "share_on_facebook": "Partager",
+      "share_on_x": "Partager",
+      "share_on_pinterest": "Épingler",
+      "alt_text": {
+        "share_on_facebook": "Partager sur Facebook",
+        "share_on_x": "Tweeter sur X",
+        "share_on_pinterest": "Épingler sur Pinterest"
+      }
+    },
+    "newsletter_form": {
+      "newsletter_email": "entrer votre Email",
+      "newsletter_confirmation": "Merci de vous être inscrit",
+      "submit": "S'inscrire"
+    },
+    "search": {
+      "view_more": "Afficher tous les résultats pour \"{{ terms }}\"",
+      "products": "Produits",
+      "suggestions": "Suggestions",
+      "collections": "Collections",
+      "pages": "Pages",
+      "articles": "Des articles",
+      "no_results_html": "Rechercher \"{{ terms }}\"",
+      "results_for_html": "Votre recherche pour \"{{ terms }}\" a généré les résultats suivants:",
+      "title": "Rechercher",
+      "placeholder": "Rechercher dans la boutique",
+      "submit": "Recherche",
+      "cancel": "Annuler",
+      "search_title": "Les plus recherchés",
+      "result_count": {
+        "one": "{{ count }} résultat",
+        "other": "{{ count }} résultats"
+      }
+    },
+    "drawers": {
+      "navigation": "Navigation",
+      "close_menu": "Fermer le menu",
+      "expand_submenu": "Ouvrir le menu",
+      "collapse_submenu": "Replier le menu"
+    },
+    "currency": {
+      "dropdown_label": "Devise"
+    },
+    "language": {
+      "dropdown_label": "Langue"
+    }
+  },
+  "sections": {
+    "map": {
+      "get_directions": "Obtenir des directions",
+      "address_error": "Impossible de trouver cette adresse",
+      "address_no_results": "Aucun résultat pour cette adresse",
+      "address_query_limit_html": "Vous avez dépassé la limite de Google utilisation de l'API. Envisager la mise à niveau à un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">régime spécial<\/a>.",
+      "auth_error_html": "Il y avait un problème authentifier votre compte Google Maps . Créer et activer <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">l'API JavaScript<\/a> et <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">l'API de géocodage<\/a> les autorisations de application."
+    },
+    "slideshow": {
+      "play_slideshow": "Lire le diaporama",
+      "pause_slideshow": "Diaporama Pause"
+    }
+  },
+  "blogs": {
+    "article": {
+      "view_all": "Tout voir",
+      "tags": "Tags",
+      "read_more": "Lire Plus",
+      "back_to_blog": "Retour à {{ title }}"
+    },
+    "comments": {
+      "title": "Laissez un commentaire",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "post": "Publier le commentaire",
+      "moderated": "Veuillez noter que les commentaires doivent être approuvés avant d'être affichés",
+      "success_moderated": "Votre commentaire a été soumis avec succès. Nous le publierons sous peu, suite à notre processus de modération.",
+      "success": "Votre commentaire a été publié avec succès!",
+      "with_count": {
+        "one": "{{ count }} commentaire",
+        "other": "{{ count }} commentaires"
+      }
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Panier",
+      "remove": "Retirer",
+      "note": "Instructions spéciales pour la commande",
+      "subtotal": "Sous-total",
+      "discounts": "Réductions",
+      "shipping_at_checkout": "Les codes promo, les frais d'envoi et les taxes seront ajoutés à la caisse.",
+      "update": "Mettre à jour",
+      "checkout": "Procéder au paiement",
+      "empty": "Votre panier est vide.",
+      "continue_browsing_html": "<a href='{{ url }}'>Continuer les achats<\/a>.",
+      "close_cart": "Fermer le panier",
+      "savings_html": "Vous économisez {{ savings }}",
+      "reduce_quantity": "Réduire la quantité de l'article de un",
+      "increase_quantity": "Augmenter la quantité de l'article de un",
+      "terms": "Je suis d'accord avec les termes et conditions",
+      "terms_html": "Je suis d'accord avec les <a href='{{ url }}' target='_blank'>termes et conditions<\/a>",
+      "terms_confirm": "Vous devez accepter les termes et conditions de vente pour vérifier",
+      "max_quantity": "Vous ne pouvez avoir que {{ quantity }} de {{ title }} dans votre panier."
+    },
+    "label": {
+      "quantity": "Quantité",
+      "total": "Total"
+    }
+  },
+  "collections": {
+    "general": {
+      "catalog_title": "Catalogue",
+      "all_of_collection": "Tout",
+      "view_all_products_html": "Voir tous les<br>{{ count }} produits",
+      "see_more": "Afficher plus",
+      "see_less": "Voir moins",
+      "no_matches": "Aucun produit ne correspond à votre recherche."
+    },
+    "sorting": {
+      "title": "Appliquer"
+    },
+    "filters": {
+      "title_tags": "Filtrer",
+      "all_tags": "Tous les produits"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "message": "Message",
+      "send": "Envoyer",
+      "post_success": "Merci de nous avoir avoir contacté. Nous reviendrons vers vous le plus rapidement possible."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mon compte",
+      "details": "Détails du compte",
+      "view_addresses": "Voir les adresses",
+      "return": "Retour au compte"
+    },
+    "activate_account": {
+      "title": "Activer le compte",
+      "subtext": "Créez votre mot de passe pour activer le compte.",
+      "submit": "Activer le compte",
+      "cancel": "Refuser l'invitation",
+      "password": "Mot de passe",
+      "password_confirm": "Confirmer le mot de passe"
+    },
+    "addresses": {
+      "title": "Votre adresse",
+      "default": "Par défaut",
+      "add_new": "Ajouter une nouvelle adresse",
+      "edit_address": "Modifier l'adresse",
+      "first_name": "Prénom",
+      "last_name": "Nom",
+      "company": "Compagnie",
+      "address1": "Adresse 1",
+      "address2": "Adresse 2",
+      "city": "Ville",
+      "country": "Pays",
+      "province": "Province",
+      "zip": "Code postal",
+      "phone": "Téléphone",
+      "set_default": "Définir comme adresse par défaut",
+      "add": "Ajouter l'adresse",
+      "update": "Mettre à jour l'adresse",
+      "cancel": "Annuler",
+      "edit": "Éditer",
+      "delete": "Supprimer",
+      "delete_confirm": "Êtes-vous certain(e) de vouloir supprimer cette adresse?"
+    },
+    "login": {
+      "title": "Connexion",
+      "email": "Email",
+      "password": "Mot de passe",
+      "forgot_password": "Mot de passe oublié?",
+      "sign_in": "Se connecter",
+      "cancel": "Retourner à la boutique",
+      "guest_title": "Continuer en tant qu'invité",
+      "guest_continue": "Continuer"
+    },
+    "orders": {
+      "title": "Historique des commandes",
+      "order_number": "Commande",
+      "date": "Date",
+      "payment_status": "Statut du paiement",
+      "fulfillment_status": "Statut du traitement de la commande",
+      "total": "Total",
+      "none": "Vous n'avez pas placé de commande à ce jour."
+    },
+    "order": {
+      "title": "Commande {{ name }}",
+      "date_html": "Placée le {{ date }}",
+      "cancelled_html": "Commande annulée le {{ date }}",
+      "cancelled_reason": "Motif: {{ reason }}",
+      "billing_address": "Adresse de facturation",
+      "payment_status": "Statut du paiement",
+      "shipping_address": "Adresse de livraison",
+      "fulfillment_status": "Statut du traitement de la commande",
+      "discount": "Rabais appliqué",
+      "shipping": "Livraison",
+      "tax": "Taxes",
+      "product": "Produit",
+      "sku": "SKU",
+      "price": "Prix",
+      "quantity": "Quantité",
+      "total": "Total",
+      "fulfilled_at_html": "Traitée le {{ date }}",
+      "subtotal": "Sous-total"
+    },
+    "recover_password": {
+      "title": "Réinitialiser votre mot de passe",
+      "email": "Courriel",
+      "submit": "Soumettre",
+      "cancel": "Annuler",
+      "subtext": "Nous vous ferons parvenir un courriel pour réinitialiser votre mot de passe.",
+      "success": "Nous vous avons fait parvenir un courriel pour réinitialiser votre mot de passe."
+    },
+    "reset_password": {
+      "title": "Réinitialiser le mot de passe du compte",
+      "subtext": "Entrez un nouveau mot de passe pour {{ email }}",
+      "submit": "Réinitialiser le mot de passe",
+      "password": "Mot de passe",
+      "password_confirm": "Confirmer le mot de passe"
+    },
+    "register": {
+      "title": "Créer un compte",
+      "first_name": "Prénom",
+      "last_name": "Nom",
+      "email": "Courriel",
+      "submit": "Créer",
+      "cancel": "Retour à la boutique",
+      "password": "Mot de passe"
+    }
+  },
+  "home_page": {
+    "onboarding": {
+      "product_title": "Titre du produit",
+      "product_description": "Cette endroit est utilisée pour la fiche du produit. Parlez aux clients de l'apparence, du ressenti et du style de votre produit. Ajoutez des détails sur la couleur, les matériaux utilisés, le dimensionnement, et où il a été fabriqué.",
+      "collection_title": "Collection",
+      "no_content": "Cette section ne contient actuellement aucun contenu. Ajoutez-en en utilisant la barre latérale."
+    }
+  },
+  "layout": {
+    "cart": {
+      "title": "Panier"
+    },
+    "customer": {
+      "account": "Compte",
+      "log_out": "Se déconnecter",
+      "log_in": "Se connecter",
+      "create_account": "Créer un compte"
+    },
+    "footer": {
+      "social_platform": "{{ name }} sur {{ platform }}"
+    }
+  },
+  "products": {
+    "general": {
+      "color_swatch_trigger": "Couleur",
+      "size_trigger": "Taille",
+      "size_chart": "Tableau des tailles",
+      "save_html": "Sauvegarder {{ saved_amount }}",
+      "collection_return": "Retour à {{ collection }}",
+      "next_product": "Suivant: {{ title }}",
+      "sale_price": "Prix réduit",
+      "regular_price": "Prix régulier",
+      "from_text_html": "À partir de {{ price }}",
+      "reviews": "Commentaires"
+    },
+    "product": {
+      "description": "Description",
+      "in_stock_label": "En stock",
+      "stock_label": "{{ count }} en stock",
+      "sold_out": "Épuisé",
+      "unavailable": "Non disponible",
+      "quantity": "Quantité",
+      "add_to_cart": "Ajouter au panier",
+      "preorder": "Pré-commander",
+      "include_taxes": "Taxes incluses.",
+      "shipping_policy_html": "<a href='{{ link }}'>Frais d'expédition<\/a> calculés lors du passage à la caisse.",
+      "will_not_ship_until": "Sera expédié après {{ date }}",
+      "will_be_in_stock_after": "Sera en stock à compter de {{ date }}",
+      "waiting_for_stock": "Inventaire sur le chemin",
+      "view_in_space": "Afficher dans votre espace",
+      "view_in_space_label": "Affichage dans votre espace, charge l'article dans une fenêtre de réalité augmentée"
+    }
+  },
+  "store_availability":{
+    "general":{
+      "view_store_info": "Afficher les informations de magasin",
+      "check_other_stores": "Vérifier la disponibilité dans d'autres magasins",
+      "pick_up_available": "Récupération disponible",
+      "pick_up_currently_unavailable": "Récupération actuellement indisponible",
+      "pick_up_available_at_html": "Récupération disponible à <strong> {{location_name}} <\/strong>",
+      "pick_up_unavailable_at_html": "Récupération actuellement indisponible à <strong> {{location_name}} <\/strong>"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title_html": "Votre carte-cadeau {{ shop }} d'une valeur de {{ value }}!",
+      "subtext": "Voici votre carte-cadeau!",
+      "disabled": "Désactivée",
+      "expired": "Expirée le {{ expiry }}",
+      "active": "Expire le {{ expiry }}",
+      "redeem": "Entrez ce code lors du paiement pour utiliser votre carte-cadeau",
+      "shop_link": "Boutique",
+      "print": "Imprimer",
+      "add_to_apple_wallet": "Ajouter à Apple Wallet"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Je veux envoyer ce produit comme cadeau",
+      "email_label": "E‑mail du destinataire",
+      "email": "E‑mail",
+      "name_label": "Nom du destinataire (facultatif)",
+      "name": "Nom",
+      "message_label": "Message (facultatif)",
+      "message": "Message",
+      "max_characters": "{{ max_chars }} caractères au maximum",
+      "send_on_label": "Envoyer (facultatif)"
+    }
+  },
+  "date_formats":{
+    "month_day_year": "%d %B, %Y"
+  },
+// EVERYTHING AFTER IS ADDITIONAL CODE
+  "customer_accounts": {
+    "order_details": {
+      "vat_invoices": {
+        "title": "Factures avec TVA"
+      }
+    }
+  },
+  "gempages": {
+    "GempagesProductTemplate": {
+      "LoveOrMoneyBack": "Ou vous aimez votre {{ product_type }} ou vous obtenez un remboursement",
+      "OfferMessage_html": "Achetez deux produits et obtenez le deuxième <strong>GRATUITEMENT<\/strong>",
+      "PdpBulletOne": "Garantie de remboursement de 30 jours",
+      "PdpBulletTwo": "Conçu pour ne jamais ternir ou se décolorer",
+      "PdpBulletThree": "Sans danger pour les peaux sensibles",
+      "PdpBulletFour": "Livré par La Poste",
+      "LoveNecklace_html": "Ou vous aimez votre <strong>Collier<\/strong> ou vous obtenez un remboursement",
+      "LoveEarring_html": "Ou vous aimez votre <strong>Boucle d'oreille<\/strong> ou vous obtenez un remboursement",
+      "LoveRing_html": "Ou vous aimez votre <strong>Anneau<\/strong> ou vous obtenez un remboursement",
+      "LoveBracelet_html": "Ou vous aimez votre <strong>Bracelet<\/strong> ou vous obtenez un remboursement",
+      "LoveKeychain_html": "Ou vous aimez votre <strong>Porte-clés<\/strong> ou vous obtenez un remboursement",
+      "LoveBlanket_html": "Ou vous aimez votre <strong>Couverture<\/strong> ou vous obtenez un remboursement",
+      "LovePendant_html": "Ou vous aimez votre <strong>Pendantif</strong> ou vous obtenez un remboursement",
+      "AddToCart": "Ajouter au Panier" //edited locally
+    },
+    "GempagesProductAccordion": {
+      "Details": "DESCRIPTION",
+      "ShippingAndReturns": "LIVRAISON & RETOUR",
+      "30Dmbg": "GARANTIE DE REMBOURSEMENT DE 30 JOURS",
+      "PhotoGuide": "Guide Photo",
+      "SarBulletOne": "Chaque commande peut prendre 1 à 2 semaines pour être livrée.",
+      "SarBulletTwo": "Chaque envoi destiné aux États-Unis est expédié via USPS Priority.",
+      "SarBulletThree": "Le suivi est disponible sur TOUTES les commandes.",
+      "30DayMbgBulletOne": "Tous nos bijoux PupRing sont accompagnés d'une garantie de remboursement de 30 jours.",
+      "30DayMbgBulletTwo": "Une fois votre article livré, vous disposez de 30 jours pour le retourner sans justification et obtenir un remboursement intégral si vous n'êtes pas satisfait. ",
+      "30DayMbgBulletThree": "Si, durant cette période, votre bijou présente un défaut de matière ou de fabrication, nous le remplacerons gratuitement. Si le modèle exact n'est plus disponible, nous vous offrirons un modèle d'une valeur ou d'un style équivalent.",
+      "AvoidBlurHeading": "1. Pas de flou",
+      "AvoidBlurBody": "Assurez-vous que votre photo est claire et nette. Une image floue peut compromettre la précision de la gravure, la rendant moins détaillée et précise.",
+      "MultiplePetsHeading": "2. PLusieurs Animaux",
+      "MultiplePetsBody": "Évitez les photos avec plusieurs animaux de compagnie, car cela diminue la qualité de la gravure. Nous ne gravons qu'une seule photo d'animal par pendentif.",
+      "WholeHeadHeading": "3. Inclure la tête entière et les yeux",
+      "WholeHeadBody": "Assurez-vous que la tête entière, les oreilles et les deux yeux soient visibles. Une photo de face nous fournira une meilleure base pour la gravure, ce qui donnera un produit final plus réaliste et détaillé.",
+      "DarkerDogsHeading": "4. Chiens à poil foncé : faites attention à l'éclairage",
+      "DarkerDogsBody": "Pour les chiens à poil foncé, un éclairage uniforme est crucial pour capturer tous les détails avec précision dans la gravure. Évitez les ombres prononcées et les images trop sombres."
+    },
+    "PetFaceNecklaceExtended": {
+      "HowItWorksHeading": "Comment ça marche !",
+      "StepOneTitle": "1. Téléchargez la photo de votre animal",
+      "StepOneDescription": "Sélectionnez une photo nette et pleine de charme qui reflète l'esprit unique de votre compagnon à quatre pattes ! (Tous les animaux sont les bienvenus.)",
+      "StepTwoTitle": "2. Nos artistes réalisent une illustration personnalisée de votre animal de compagnie.",
+      "StepTwoDescription": "Notre équipe mettra en avant les détails essentiels de votre animal de compagnie pour créer une illustration détaillée, prête à être gravée. Si votre image présente un problème, nous vous contacterons pour en obtenir une nouvelle.",
+      "StepThreeTitle": "3. Nos artisans créent votre éternel collier.",
+      "StepThreeDescription": "Nous gravons méticuleusement votre illustration sur votre collier personnalisé !",
+      "RealDogMomsHeading_html": "Voici ce que les <span class=\"custom-highlight\">Fou de Toutou<\/span> disent de leurs PupRing !",
+      "ReviewScoreHeading": "4.8\/5.0",
+      "ReviewScoreSubtext": "&nbsp; D'après 2,145 Avis",
+      "ReviewOneTitle": "J'adore ❤️",
+      "ReviewOneBody": "\"Mon chien Bama est parti en Juillet.J'ai découvert ce site et commandé un collier que j'adore absolument. Je prévois d'en commander trois autres pour mes autres chiens, qui sont toujours à mes côtés. La bague est magnifique, je ne pourrais pas être plus satisfaite. \" - Sherri R.",
+      "ReviewTwoTitle": "Cadeau de fête des mères",
+      "ReviewTwoBody": "« Ma mère avait un chien nommé Sugar, c'était juste un croisé, mais ma mère l'aimait plus que tout. Sugar est décédée l'année dernière et cela a été très difficile pour ma mère. Pour la Fête des Mères, je voulais lui offrir quelque chose qui honorerait la mémoire de Sugar, et j'ai trouvé ce collier. Elle a pleuré en le voyant et ne l'a plus enlevé depuis. Elle l'adore et dit que c'est comme avoir un morceau de Sugar avec elle tout le temps. » - James R.",
+      "ReviewThreeTitle": "Carrément parfait",
+      "ReviewThreeBody": "« J'adore absolument ma PupRing. Perdre mon chien a été dévastateur. Avoir ce collier me fait sentir qu'elle est encore là. J'ai reçu beaucoup de compliments et je l'ai recommandé à mes amis. » - Season M.",
+      "ReviewFourTitle": "Vraiment Impressionnant",
+      "ReviewFourBody": "« J'ai trouvé ce produit grâce à une publicité sur Facebook et j'étais initialement sceptique, mais j'ai décidé de tenter le coup. Le collier est arrivé plus vite que prévu et la qualité m'a époustouflée. La gravure était exactement comme je l'avais demandée et l'anneau lui-même est robuste et élégant. Je l'ai depuis quelques semaines maintenant et il a merveilleusement bien résisté. C'est un moyen charmant de garder le souvenir de mon compagnon à quatre pattes près de moi. » - Rhona R.",
+      "ReviewFiveTitle": "Parfait !",
+      "ReviewFiveBody": "« J'ai acheté cette bague pour ma belle-sœur qui vient de perdre son chien de 9 ans. Elle était tellement heureuse et reconnaissante pour ce bijou, merci ❤️ » - Danielle M.",
+      "ButtonText": "Créez le votre dès maintenant"
+    },
+    "NameEngraving": {
+      "YourPetNameHeading": "LE NOM DE VOTRE ANIMAL",
+      "EngravingOnFront": "GRAVURE A L'AVANT",
+      "EngravingOnBack": "GRAVURE AU DOS",
+      "PetNamePlaceholder": "Le nom de votre plus fidèle compagnon 💕",
+      "PawPrintWarning": "Nous limitons chaque gravure à 8 caractères pour garantir que le nom de votre chien soit clairement visible",
+      "PawPrintWarning12": "Nous limitons chaque gravure à 12 caractères pour garantir que le nom de votre chien soit clairement visible",
+      "PawPrintWarning16": "Nous limitons chaque gravure à 16 caractères pour garantir que le nom de votre chien soit clairement visible",
+      "PleaseAddPetName": "Veuillez ajouter le nom de votre animal.", //edited locally 
+      "YourFirstPendant": "Votre premier pendantif",
+      "YourSecondPendant": "Votre deuxième pendentif",
+      "YourThirdPendant": "Votre troisième pendentif",
+      "YourFourthPendant": "Votre quatrième pendentif",
+      "Sizechart": "Tableau des tailles"
+    }
+  }
+}

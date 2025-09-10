@@ -1,0 +1,464 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "general": {
+    "accessibility": {
+      "skip_to_content": "Ir directamente al contenido",
+      "close_modal": "Cerrar (esc)",
+      "close": "Cerrar",
+      "learn_more": "Aprende más"
+    },
+    "meta": {
+      "tags": "Etiquetado \"{{ tags }}\"",
+      "page": "Página {{ page }}"
+    },
+    "404": {
+      "title": "404 Página no encontrada",
+      "subtext_html": "La página que ha solicitado no existe. Haga clic <a href='{{ url }}'>aquí<\/a> para continuar la compra."
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Siguiente"
+    },
+    "password_page": {
+      "login_form_heading": "Entrar a la tienda usando contraseña:",
+      "login_form_password_label": "Contraseña",
+      "login_form_password_placeholder": "Tu contraseña",
+      "login_form_submit": "Ingresar",
+      "signup_form_email_label": "Correo Electrónico",
+      "signup_form_success": "¡Te enviaremos un correo electrónico antes de inaugurar!",
+      "admin_link_html": "¿Eres el dueño de la tienda? <a href=\"\/admin\" class=\"text-link\">Regístrate aquí<\/a>",
+      "password_link": "Contraseña",
+      "powered_by_shopify_html": "Esta tienda estará impulsada por {{ shopify }}"
+    },
+    "breadcrumbs": {
+      "home": "Inicio",
+      "home_link_title": "Volver a la portada"
+    },
+    "social": {
+      "share_on_facebook": "Compartir",
+      "share_on_x": "Compartir",
+      "share_on_pinterest": "Hacer pin",
+      "alt_text": {
+        "share_on_facebook": "Compartir en Facebook",
+        "share_on_x": "Tuitear en X",
+        "share_on_pinterest": "Pinear en Pinterest"
+      }
+    },
+    "newsletter_form": {
+      "newsletter_email": "Suscríbete a nuestra lista de correo",
+      "newsletter_confirmation": "Gracias por suscribirse",
+      "submit": "Suscribir"
+    },
+    "search": {
+      "view_more": "Ver más",
+      "collections": "Colecciones:",
+      "pages": "Páginas:",
+      "articles": "Artículos:",
+      "no_results_html": "Su búsqueda de \"{{ terms }}\" no tuvo resultados.",
+      "results_for_html": "Su búsqueda de \"{{ terms }}\" muestra lo siguiente:",
+      "title": "Buscar",
+      "placeholder": "Buscar en nuestra tienda",
+      "submit": "Buscar",
+      "cancel": "Cancelar",
+      "search_title": "Más buscadas",
+      "result_count": {
+        "one": "{{ count }} resultado",
+        "other": "{{ count }} resultados"
+      }
+    },
+    "drawers": {
+      "navigation": "Navegación",
+      "close_menu": "Cerrar menú",
+      "expand_submenu": "Expandir menú",
+      "collapse_submenu": "Colapsar menú"
+    },
+    "currency": {
+      "dropdown_label": "Moneda"
+    },
+    "language": {
+      "dropdown_label": "Idioma"
+    }
+  },
+  "sections": {
+    "map": {
+      "get_directions": "Obtener las direcciones",
+      "address_error": "No se puede encontrar esa dirección",
+      "address_no_results": "No hay resultados para esa dirección",
+      "address_query_limit_html": "Has excedido el límite de uso de la API de Google. Considera actualizar a un <a href='https:\/\/developers.google.com\/maps\/premium\/usage-limits'>Plan Premium<\/a>.",
+      "auth_error_html": "Hubo un problema al autenticar tu cuenta de Google Maps. Crea y habilita las <a href='https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key'>permisos de la API de JavaScript<\/a> y la <a href='https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key'>API de Geocodificación<\/a> de tu aplicación."
+    },
+    "slideshow": {
+      "play_slideshow": "Reproducir presentación",
+      "pause_slideshow": "Pausar presentación"
+
+    }
+  },
+  "blogs": {
+    "article": {
+      "view_all": "Ver todo",
+      "tags": "Etiquetas",
+      "read_more": "Leer más",
+      "back_to_blog": "Volver a {{ title }}"
+    },
+    "comments": {
+      "title": "Dejar un comentario",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "post": "Publicar comentario",
+      "moderated": "Por favor tenga en cuenta que los comentarios deben ser aprobados antes de ser publicados",
+      "success_moderated": "Su comentario se ha compartido con éxito. Lo publicaremos en un momento, en tanto nuestro blog sea moderado.",
+      "success": "¡Su comentario se ha compartido con éxito! ¡Gracias!",
+      "with_count": {
+        "one": "{{ count }} comentario",
+        "other": "{{ count }} comentarios"
+      }
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "Carrito de compra",
+      "remove": "Quitar",
+      "note": "Instrucciones especiales para el vendedor",
+      "subtotal": "Subtotal",
+      "discounts": "Descuentos",
+      "shipping_at_checkout": "Los códigos de descuento, los costes de envío y los impuestos se añaden durante el pago.",
+      "update": "Actualizar carrito",
+      "checkout": "Finalizar pedido",
+      "empty": "Su carrito actualmente está vacío.",
+      "continue_browsing_html": "Continúe explorando <a href='{{ url }}'>aquí<\/a>.",
+      "close_cart": "Cerrar carrito",
+      "savings_html": "Está ahorrando {{ savings }}",
+      "reduce_quantity": "Reducir la cantidad del artículo en uno",
+      "increase_quantity": "Aumentar la cantidad del artículo en uno",
+      "terms": "Acepto los términos y condiciones",
+      "terms_html": "Acepto los <a href='{{ url }}' target='_blank'>términos y condiciones<\/a>",
+      "terms_confirm": "Debe aceptar los términos y condiciones de venta para pagar",
+      "max_quantity": "Solo puedes tener {{ quantity }} de {{ title }} en tu carrito."
+    },
+    "label": {
+      "quantity": "Cantidad",
+      "total": "Total"
+    }
+  },
+  "collections": {
+    "general": {
+      "catalog_title": "Catálogo",
+      "all_of_collection": "Todos",
+      "view_all_products_html": "ver los<br>{{ count }} productos",
+      "see_more": "Mostrar más",
+      "see_less": "Muestra menos",
+      "no_matches": "Lo sentimos, no hay productos que coincidan con su búsqueda."
+    },
+    "sorting": {
+      "title": "Ordenar"
+    },
+    "filters": {
+      "title_tags": "Filtrar",
+      "all_tags": "Todos los productos"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "post_success": "Gracias por contactarnos. Le responderemos lo antes posible."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "Mi cuenta",
+      "details": "Detalles de la cuenta",
+      "view_addresses": "Ver direcciones",
+      "return": "Volver a detalles de la cuenta"
+    },
+    "activate_account": {
+      "title": "Activar cuenta",
+      "subtext": "Cree su contraseña para activar su cuenta.",
+      "password": "Contraseña",
+      "password_confirm": "Confirmar contraseña",
+      "submit": "Activar cuenta",
+      "cancel": "Rechazar invitación"
+    },
+    "addresses": {
+      "title": "Sus direcciones",
+      "default": "Predeterminado",
+      "add_new": "Agregar una nueva dirección",
+      "edit_address": "Editar dirección",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "company": "Compañía",
+      "address1": "Dirección1",
+      "address2": "Dirección2",
+      "city": "Ciudad",
+      "country": "País",
+      "province": "Provincia",
+      "zip": "Código postal",
+      "phone": "Teléfono",
+      "set_default": "Fijar como dirección predeterminada",
+      "add": "Agregar dirección",
+      "update": "Actualizar dirección",
+      "cancel": "Cancelar",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "delete_confirm": "¿Está seguro de que desea eliminar esta dirección?"
+    },
+    "login": {
+      "title": "Ingresar",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "forgot_password": "¿Olvidó su contraseña?",
+      "sign_in": "Registrarse",
+      "cancel": "Volver a la tienda",
+      "guest_title": "Continuar como invitado",
+      "guest_continue": "Continuar"
+    },
+    "orders": {
+      "title": "Historial de pedidos",
+      "order_number": "Pedido",
+      "date": "Fecha",
+      "payment_status": "Estado del pago",
+      "fulfillment_status": "Estado de finalización",
+      "total": "Total",
+      "none": "No ha realizado algún pedido aún."
+    },
+    "order": {
+      "title": "Pedido {{ name }}",
+      "date_html": "Realizado el {{ date }}",
+      "cancelled_html": "Pedido cancelado el {{ date }}",
+      "cancelled_reason": "Motivo: {{ reason }}",
+      "billing_address": "Dirección de facturación",
+      "payment_status": "Estado del pago",
+      "shipping_address": "Dirección de envío",
+      "fulfillment_status": "Estado del pedido",
+      "discount": "Descuento",
+      "shipping": "Envío",
+      "tax": "Impuesto",
+      "product": "Producto",
+      "sku": "SKU",
+      "price": "Precio",
+      "quantity": "Cantidad",
+      "total": "Total",
+      "fulfilled_at_html": "Finalizado {{ date }}",
+      "subtotal": "Subtotal"
+    },
+    "recover_password": {
+      "title": "Restablecer su contraseña",
+      "email": "Correo electrónico",
+      "submit": "Enviar",
+      "cancel": "Cancelar",
+      "subtext": "Le enviaremos un correo electrónico para restablecer su contraseña.",
+      "success": "Hemos enviado un correo electrónico con un enlace para actualizar su contraseña."
+    },
+    "reset_password": {
+      "title": "Restablecer contraseña de cuenta",
+      "subtext": "Ingrese una nueva contraseña para {{ email }}",
+      "password": "Contraseña",
+      "password_confirm": "Confirmar contraseña",
+      "submit": "Restablecer contraseña"
+    },
+    "register": {
+      "title": "Crear cuenta",
+      "first_name": "Nombre",
+      "last_name": "Apellido",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "submit": "Crear",
+      "cancel": "Volver a la tienda"
+    }
+  },
+  "home_page": {
+    "onboarding": {
+      "product_title": "Ejemplo título de producto",
+      "product_description": "Este campo se utiliza para describir los detalles de tu producto. Informa a los clientes acerca de la apariencia, percepción y estilo de tu producto. Incluye detalles sobre el color, los materiales utilizados, el tamaño y donde se hizo.",
+      "collection_title": "Ejemplo título de colección",
+      "no_content": "Esta sección no contiene contenido en este momento. Agrega contenido a esta sección usando la barra lateral."
+    }
+  },
+  "layout": {
+    "cart": {
+      "title": "Carrito"
+    },
+    "customer": {
+      "account": "Cuenta",
+      "log_out": "Cerrar sesión",
+      "log_in": "Ingresar",
+      "create_account": "Crear cuenta"
+    },
+    "footer": {
+      "social_platform": "{{ name }} en {{ platform }}"
+    }
+  },
+  "products": {
+    "general": {
+      "color_swatch_trigger": "Color",
+      "size_trigger": "Tamaño",
+      "size_chart": "Tabla de tallas",
+      "save_html": "Guardar {{ saved_amount }}",
+      "collection_return": "Volver a {{ collection }}",
+      "next_product": "Siguiente: {{ title }}",
+      "sale_price": "Precio de oferta",
+      "regular_price": "Precio habitual",
+      "from_text_html": "{{ price }}",
+      "reviews": "Comentarios"
+    },
+    "product": {
+      "description": "Descripción",
+      "in_stock_label": "En stock",
+      "stock_label": "{{ count }} en stock",
+      "sold_out": "Agotado",
+      "unavailable": "No disponible",
+      "quantity": "Cantidad",
+      "add_to_cart": "Agregar al carrito",
+      "preorder": "Hacer un pedido",
+      "include_taxes": "Impuesto incluido.",
+      "shipping_policy_html": "<b>ELIMÍNAME<\/b>",
+      "will_not_ship_until": "Listo para enviar el {{ date }}",
+      "will_be_in_stock_after": "¡Recibe una notificación cuando repongamos abajo!",
+      "waiting_for_stock": "Inventario en el camino",
+      "view_in_space": "Ver en tu espacio",
+      "view_in_space_label": "Ver en tu espacio, carga el artículo en una ventana de realidad aumentada"
+    }
+  },
+  "store_availability":{
+    "general":{
+      "view_store_info": "Información de la tienda",
+      "check_other_stores": "Consulte la disponibilidad en otras tiendas",
+      "pick_up_available": "Recogida disponible",
+      "pick_up_currently_unavailable": "Recogida no disponible actualmente",
+      "pick_up_available_at_html": "Recogida disponible en <strong> {{location_name}} <\/strong>",
+      "pick_up_unavailable_at_html": "Recogida no disponible actualmente en <strong>{{ location_name }}<\/strong>"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title_html": "¡Aquí está su tarjeta de regalo de {{ value }} para {{ shop }}!",
+      "subtext": "¡Aquí está su tarjeta de regalo!",
+      "disabled": "Inhabilitada",
+      "expired": "Expiró en {{ expiry }}",
+      "active": "Expira en {{ expiry }}",
+      "redeem": "Use este código al terminar la comprar para canjear su tarjeta de regalo",
+      "shop_link": "Empezar a comprar",
+      "print": "Imprimir",
+      "add_to_apple_wallet": "Añadir a Apple Wallet"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Quiero enviar esto como un regalo.",
+      "email_label": "Correo electrónico de la persona destinataria",
+      "email": "Correo electrónico",
+      "name_label": "Nombre de la persona destinataria (opcional)",
+      "name": "Nombre",
+      "message_label": "Mensaje (opcional)",
+      "message": "Mensaje",
+      "max_characters": "{{ max_chars }} caracteres máx.",
+      "send_on_label": "Enviar (opcional)"
+    }
+  },
+  "date_formats":{
+    "month_day_year": "%d de %B, %Y"
+  },
+  "customer_accounts": {
+    "order_details": {
+      "vat_invoices": {
+        "title": "facturas con IVA"
+      }
+    },
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "Ocultar menú de cuenta",
+        "show_accessibility_label": "Mostrar menú de cuenta"
+      }
+    }
+  },
+// EVERYTHING AFTER IS ADDITIONAL CODE
+
+  "gempages": {
+    "GempagesProductTemplate": {
+      "LoveOrMoneyBack": "Ama Tu {{ product_type }} o te Devolvemos tu Dinero",
+      "OfferMessage_html": "Compra Dos Productos, y El Segundo Te Sale <strong>GRATIS<\/strong>",
+      "PdpBulletOne": "Garantía de Reembolso de Dinero de 30 Días",
+      "PdpBulletTwo": "Diseñado para Nunca Desgastarse ni Decolorarse",
+      "PdpBulletThree": "Apto para Pieles Sensibles",
+      "PdpBulletFour": "Entregado por el Servicio Postal de Estados Unidos USPS",
+      "LoveNecklace_html": "Ama Tu <strong>Collar<\/strong> o te Devolvemos tu Dinero",
+      "LoveEarring_html": "Ama Tus <strong>Pendientes<\/strong> o te Devolvemos tu Dinero",
+      "LoveRing_html": "Ama Tu <strong>Anillo<\/strong> o te Devolvemos tu Dinero",
+      "LoveBracelet_html": "Ama Tu <strong>Pulsera<\/strong> o te Devolvemos tu Dinero",
+      "LoveKeychain_html": "Ama Tu <strong>Llavero<\/strong> o te Devolvemos tu Dinero",
+      "LoveBlanket_html": "Ama Tu <strong>Frazada<\/strong> o te Devolvemos tu Dinero",
+      "LovePendant_html": "Ama tu <strong>Pendant</strong> o te devolvemos tu dinero",
+      "AddToCart": "Añadir al Carrito" //edited locally
+    },
+    "GempagesProductAccordion": {
+      "Details": "DESCRIPCIÓN",
+      "ShippingAndReturns": "ENVÍOS Y DEVOLUCIONES",
+      "30Dmbg": "GARANTÍA DE REEMBOLSO DE DINERO DE 30 DÍAS",
+      "PhotoGuide": "GUÍA DE FOTOS",
+      "SarBulletOne": "Cada pedido puede tardar de 1 a 2 semanas en entregarse.",
+      "SarBulletTwo": "Cada pedido nacional se envía a través de USPS Priority.",
+      "SarBulletThree": "El seguimiento está disponible en TODOS los pedidos.",
+      "30DayMbgBulletOne": "Todas las joyas de PupRing tienen una Garantía de Reembolso de Dinero de 30 Días.",
+      "30DayMbgBulletTwo": "Una vez que tu artículo sea entregado, ofrecemos un reembolso sin preguntas si no te encanta dentro de los primeros 30 días!",
+      "30DayMbgBulletThree": "Si, dentro de este período, la joyería presenta defectos en los materiales o en la fabricación, proporcionaremos un reemplazo sin costo adicional. Si el modelo exacto no está disponible, ofreceremos una pieza de valor o estilo similar.",
+      "AvoidBlurHeading": "1. Evita el Desenfoque",
+      "AvoidBlurBody": "Asegúrate de que tu foto esté clara y enfocada. Las fotos borrosas pueden afectar la precisión del grabado, haciéndolo parecer menos definido y nítido.",
+      "MultiplePetsHeading": "2. Varias Mascotas",
+      "MultiplePetsBody": "Evita las fotos con varias mascotas, ya que esto disminuye la calidad del grabado. Solo grabamos la foto de una mascota por colgante.",
+      "WholeHeadHeading": "3. Incluye la Cabeza Entera y Ojos",
+      "WholeHeadBody": "Asegúrate de que toda la cabeza, las orejas y ambos ojos estén visibles. Una foto de frente nos proporcionará una mejor base para el grabado, lo que resultará en un producto final más realista y detallado.",
+      "DarkerDogsHeading": "4. Perros de Pelo Oscuro: Prestar Atención a la Iluminación",
+      "DarkerDogsBody": "Para perros oscuros, la buena iluminación es esencial para asegurar que todos los detalles se capturen con precisión en el grabado. Evita sombras duras o fotos demasiado oscuras."
+    },
+    "PetFaceNecklaceExtended": {
+      "HowItWorksHeading": "¿Cómo funciona?",
+      "StepOneTitle": "1. Sube la Foto de Tu Mascota",
+      "StepOneDescription": "Elige una foto que capture el espíritu único de tu amigo peludo. ¡Todos los animales son bienvenidos!",
+      "StepTwoTitle": "2. Nuestros Artistas Ilustrarán a Tu Mascota",
+      "StepTwoDescription": "Nuestro equipo resaltará los detalles de tu mascota para crear una hermosa ilustración lista para el grabado. Si hay algún problema con tu imagen, nos pondremos en contacto para solicitar una nueva.",
+      "StepThreeTitle": "3. Nuestros Artesanos Crean tu Collar",
+      "StepThreeDescription": "Grabamos meticulosamente tu ilustración en tu propio collar personalizado!",
+      "RealDogMomsHeading_html": "¡Lo que Dicen las <span class=\"custom-highlight\">Mamás Perrunas<\/span> Sobre su PupRing!",
+      "ReviewScoreHeading": "4.8\/5.0",
+      "ReviewScoreSubtext": "&nbsp; Basado en 2,145 Reseñas",
+      "ReviewOneTitle": "Lo amo ❤️",
+      "ReviewOneBody": "\"Mi perro Bruno falleció en Julio. Encontré este sitio web y pedí un collar. Me encanta. Voy a pedir 3 más para mis otros perros que todavía están conmigo. El anillo es absolutamente hermoso, no podría pedir más.\" - María M.",
+      "ReviewTwoTitle": "Regalo del Día de las Madres",
+      "ReviewTwoBody": "\"Mi mamá tenía una perra llamada Luna, es solo una mestiza pero mi mamá la amaba más que a nada en el mundo. Luna falleció el año pasado y fue muy difícil para mi mamá. Por el Día de la Madre, quería regalarle algo que honrara la memoria de Luna y encontré este collar. Lloró cuando lo vio y no se lo ha quitado desde entonces. Le encanta y dice que es como tener un pedacito de Luna con ella todo el tiempo.\" - Cristina L.",
+      "ReviewThreeTitle": "Absolutamente perfecto",
+      "ReviewThreeBody": "\"De verdad amo a mi PupRing. Perder a mi perrito ha sido devastador. Tener este collar me hace sentir como que sigue aquí. He recibido muchos cumplidos y lo he recomendado a mis amigos.\" - Luana S.",
+      "ReviewFourTitle": "Súper impresionada",
+      "ReviewFourBody": "\"Encontré este producto en un anuncio de Facebook y al principio estaba en duda, pero decidí darle una oportunidad. El collar llegó más rápido de lo esperado y la calidad me sorprendió. El grabado fue tal como lo pedí y el anillo en sí es resistente y elegante. Lo he tenido por unas semanas y se ha mantenido en perfecto estado. Es una forma especial de mantener viva la memoria de mi perrito.\" - Estefanía A.",
+      "ReviewFiveTitle": "¡Perfecto!",
+      "ReviewFiveBody": "\"Compré este anillo para mi cuñada, que acaba de perder a su perro de 9 años. Ella estaba tan feliz y agradecida por esta pieza, gracias ❤️\" - Daniela C.",
+      "ButtonText": "Crea el Tuyo Hoy"
+    },
+    "NameEngraving": {
+      "YourPetNameHeading": "EL NOMBRE DE TU MASCOTA",
+      "EngravingOnFront": "GRABADO EN EL FRENTE",
+      "EngravingOnBack": "Grabado en la parte trasera",
+      "PetNamePlaceholder": "El nombre de tu mejor amigo 💕",
+      "PawPrintWarning": "Limitamos cada grabado a 8 caracteres para asegurarnos de que el nombre de tu mascota sea claramente visible.",
+      "PawPrintWarning12": "Limitamos cada grabado a 12 caracteres para asegurarnos de que el nombre de tu mascota sea claramente visible.",
+      "PawPrintWarning16": "Limitamos cada grabado a 16 caracteres para asegurarnos de que el nombre de tu mascota sea claramente visible.",
+      "PleaseAddPetName": "Por favor agregue el nombre de su mascota.", //edited locally
+      "YourFirstPendant": "Tu Primer Colgante",
+      "YourSecondPendant": "Tu Segundo Colgante",
+      "YourThirdPendant": "Tu Tercer Colgante",
+      "YourFourthPendant": "Tu Cuarto Colgante",
+      "Sizechart": "Tabla de Tallas"
+    }
+  }
+}

@@ -1,0 +1,412 @@
+{%- liquid
+  assign collection = collections[section.settings.collection] | default: collections.all
+  assign products_limit = section.settings.products_to_show | default: 8
+  assign columns_desktop = section.settings.columns_desktop | default: 4
+  assign columns_mobile = section.settings.columns_mobile | default: 2
+-%}
+
+<section class="featured-products" data-section-id="{{ section.id }}">
+  <div class="container">
+    {%- if section.settings.title != blank -%}
+      <div class="section-header">
+        <h2 class="section-title">{{ section.settings.title }}</h2>
+        {%- if section.settings.subtitle != blank -%}
+          <p class="section-subtitle">{{ section.settings.subtitle }}</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="products-grid products-grid--{{ columns_desktop }}-col products-grid--mobile-{{ columns_mobile }}-col">
+      {%- for product in collection.products limit: products_limit -%}
+        <div class="product-item">
+          <div class="product-card">
+            <div class="product-card__image">
+              <a href="{{ product.url }}" class="product-link">
+                {%- if product.featured_media -%}
+                  <img 
+                    src="{{ product.featured_media | image_url: width: 400 }}"
+                    alt="{{ product.featured_media.alt | escape }}"
+                    width="400"
+                    height="400"
+                    loading="lazy"
+                    class="product-image"
+                  >
+                {%- else -%}
+                  <div class="product-image-placeholder">
+                    <svg width="100%" height="100%" viewBox="0 0 400 400" fill="none">
+                      <rect width="400" height="400" fill="#f3f3f3"/>
+                      <text x="200" y="200" text-anchor="middle" fill="#999">No Image</text>
+                    </svg>
+                  </div>
+                {%- endif -%}
+              </a>
+            </div>
+
+            <div class="product-card__content">
+              <h3 class="product-title">
+                <a href="{{ product.url }}">{{ product.title }}</a>
+              </h3>
+              
+              <div class="product-price">
+                {%- if product.compare_at_price > product.price -%}
+                  <span class="price price--on-sale">{{ product.price | money }}</span>
+                  <span class="price price--compare">{{ product.compare_at_price | money }}</span>
+                {%- else -%}
+                  <span class="price">{{ product.price | money }}</span>
+                {%- endif -%}
+              </div>
+
+              {%- if section.settings.show_description and product.description != blank -%}
+                <div class="product-description">
+                  {{ product.description | truncate: 100 }}
+                </div>
+              {%- endif -%}
+
+              {%- if section.settings.show_add_to_cart -%}
+                <div class="product-actions">
+                  <button type="button" class="btn btn--primary btn--small product-add-btn" data-product-id="{{ product.id }}">
+                    Add to Cart
+                  </button>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      {%- else -%}
+        <div class="empty-collection">
+          <p>No products found in this collection.</p>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.show_view_all and collection.products_count > products_limit -%}
+      <div class="section-footer">
+        <a href="{{ collection.url }}" class="btn btn--secondary">
+          View All Products
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+<style>
+  .featured-products {
+    padding: 4rem 0;
+    background: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .section-subtitle {
+    font-size: 1.125rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .products-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .products-grid--4-col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .products-grid--3-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .products-grid--2-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card__image {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+  }
+  
+  .product-image,
+  .product-image-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .product-card__content {
+    padding: 1.5rem;
+  }
+  
+  .product-title {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .product-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .product-title a:hover {
+    color: #007cba;
+  }
+  
+  .product-price {
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .price--on-sale {
+    color: #e74c3c;
+  }
+  
+  .price--compare {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 0.5rem;
+  }
+  
+  .product-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .product-actions {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .btn--primary {
+    background: #007cba;
+    color: white;
+  }
+  
+  .btn--primary:hover {
+    background: #005a87;
+  }
+  
+  .btn--secondary {
+    background: transparent;
+    color: #007cba;
+    border: 2px solid #007cba;
+  }
+  
+  .btn--secondary:hover {
+    background: #007cba;
+    color: white;
+  }
+  
+  .btn--small {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .section-footer {
+    text-align: center;
+  }
+  
+  .empty-collection {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .products-grid--4-col {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .featured-products {
+      padding: 3rem 0;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .products-grid--4-col,
+    .products-grid--3-col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .products-grid--mobile-1-col {
+      grid-template-columns: 1fr;
+    }
+    
+    .product-card__content {
+      padding: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .products-grid {
+      gap: 1rem;
+    }
+    
+    .section-header {
+      margin-bottom: 2rem;
+    }
+    
+    .section-title {
+      font-size: 1.75rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Featured Products",
+  "tag": "section", 
+  "class": "featured-products-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Featured Products"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtext"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 24,
+      "step": 2,
+      "label": "Number of products to show",
+      "default": 8
+    },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "label": "Desktop columns",
+      "options": [
+        {
+          "value": "2",
+          "label": "2 columns"
+        },
+        {
+          "value": "3", 
+          "label": "3 columns"
+        },
+        {
+          "value": "4",
+          "label": "4 columns"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Mobile columns",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 column"
+        },
+        {
+          "value": "2",
+          "label": "2 columns"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "label": "Show product description",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_add_to_cart",
+      "label": "Show add to cart button",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": "Show 'View all' button",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Products"
+    }
+  ]
+}
+{% endschema %}

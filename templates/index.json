@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "hero_banner": {
+      "type": "hero-banner",
+      "settings": {
+        "enable_hero": true,
+        "hero_height": "screen",
+        "hero_layout": "center",
+        "hero_text_position": "center",
+        "show_overlay": true,
+        "overlay_opacity": 30
+      }
+    },
+    "featured_products": {
+      "type": "featured-products",
+      "settings": {
+        "title": "Featured Products",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "show_view_all": true
+      }
+    },
+    "image_with_text": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "image_first",
+        "image_position": "center",
+        "content_position": "middle",
+        "background_type": "full_width"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "settings": {
+        "title": "What Our Customers Say",
+        "auto_rotate": true,
+        "rotate_speed": 5,
+        "show_dots": true
+      }
+    }
+  },
+  "order": [
+    "hero_banner",
+    "featured_products", 
+    "image_with_text",
+    "testimonials"
+  ]
+}

@@ -1,0 +1,573 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "customer": {
+    "account": {
+      "title": "حسابي",
+      "details": "تفاصيل حسابي",
+      "view_addresses": "اظهر العناوين"
+    },
+    "activate_account": {
+      "title": "تفعيل الحساب",
+      "subtext": "انشأ كلمة السر لتفعيل حسابك",
+      "password": "كلمة السر",
+      "password_confirm": "تأكيد كلمة السر",
+      "submit": "تفعيل الحساب",
+      "cancel": "تفعيل الحساب"
+    },
+    "addresses": {
+      "title": "العناوين",
+      "default": "الاعداد الطبيعي",
+      "add_new": "اضف عنوان",
+      "edit_address": "غير العنوان",
+      "first_name": "الاسم الاول",
+      "last_name": "الاسم العائلة",
+      "company": "الشركة",
+      "address1": "العنوان الاول",
+      "address2": "العنوان الثاني",
+      "city": "المدينة",
+      "country": "الدولة",
+      "province": "المحافظة",
+      "zip": "الرمز البريدي",
+      "phone": "رقم الهاتف",
+      "set_default": "تعيين كعنوان اساسي",
+      "add": "ضف عنوان",
+      "update": "تحديث العنوان",
+      "cancel": "الغاء",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "delete_confirm": "هل انت متأكد انك تريد ان تلغي هذا العنوان؟"
+    },
+    "login": {
+      "title": "تسجيل الدخول",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة السر",
+      "forgot_password": "نسيت؟",
+      "sign_in": "تسجيل الدخول ",
+      "cancel": "الرجوع الى المتجر",
+      "guest_title": "الاستمرار كضيف",
+      "guest_continue": "الاستمرار"
+    },
+    "orders": {
+      "title": "تاريخ الطلبات",
+      "order_number": "الطلب",
+      "date": "التاريخ",
+      "payment_status": "حالة الدفع",
+      "fulfillment_status": "حالة الإيفاء",
+      "total": "المبلغ الاجمالي",
+      "none": "لم تضع اي طلبات حتى الان"
+    },
+    "order": {
+      "title": "طلب {{ name }}",
+      "date_html": "وضع الطلب في  {{ date }}",
+      "cancelled_html": "الغاء الطلب في تاريخ {{ date }}",
+      "cancelled_reason": "السبب:  {{ reason }}",
+      "billing_address": "عنوان الدفع",
+      "payment_status": "حالة الدفع",
+      "shipping_address": "عنوان التوصيل",
+      "fulfillment_status": "حالة الإيفاء",
+      "discount": "خصم",
+      "shipping": "التوصيل",
+      "tax": "الضريبة",
+      "product": "المنتج",
+      "sku": "SKU",
+      "price": "السعر",
+      "quantity": "العدد",
+      "total": "المجموع",
+      "fulfilled_at_html": "تم في تاريخ {{ date }}",
+      "subtotal": "المجموع الاجمالي"
+    },
+    "recover_password": {
+      "title": "تغيير كلمة السر",
+      "email": "البريد الالكتروني",
+      "submit": "قدم",
+      "cancel": "الغاء",
+      "subtext": "سنرسل لك رسالة عبر بريد الكتروني لتغيير كلمة السر",
+      "success": "ارسلنا لك بريد الكتروني يحتوي على رابط لتغيير كلمة السر"
+    },
+    "reset_password": {
+      "title": "تغيير كلمة السر لحسابك",
+      "subtext": "ادخل كلمة السر جديدة لبريدك الالكتروني {{ email }}",
+      "password": "كلمة السر",
+      "password_confirm": "تأكييد كلمة السر",
+      "submit": "تغيير كلمة السر"
+    },
+    "register": {
+      "title": "انشأ حساب",
+      "first_name": "الاسم الاول",
+      "last_name": "اسم العائلة",
+      "email": "البريد الالكتروني",
+      "password": "كلمة السر",
+      "submit": "انشأ",
+      "cancel": "الرجوع الى المتجر"
+    }
+  },
+  "shopify": {
+    "sentence": {
+      "words_connector": ", ",
+      "two_words_connector": "و",
+      "last_word_connector": ", و"
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "هل انت متأكد انك تريد الغاء هذا العنوان"
+      },
+      "general": {
+        "page_title": "انهاء ودفع",
+        "error_page_title": "خطأ",
+        "skip_to_content": "الذهاب الى المحتوى",
+        "breadcrumb": "Breadcrumb",
+        "continue_button_label": "المتابعة",
+        "complete_purchase_button_label": "انهاء الطلب",
+        "pay_now_button_label": "الدفع الان",
+        "authenticate_purchase_button_label": "تحقق من الدفع",
+        "edit_link_label": "تعديل",
+        "all_rights_reserved": "جميع الحقوق محفوظة %{shop_name}",
+        "print_policies_link_label": "اطبع",
+        "cart": "عربة التسوق",
+        "close_modal_label": "اغلق",
+        "close_notice_label": "اغلق",
+        "expand_notice_label": "اظهر المزيد",
+        "continue_to_shipping_method": "اذهب الى الشحن",
+        "continue_to_payment_method": "الذهاب الى الدفع",
+        "continue_to_review": "راجع الطلب",
+        "back_to_cart": "الرجوع الى عربة التسوق",
+        "back_to_contact_information": "الرجوع الى المعلومات",
+        "back_to_shipping_method": "الرجوع الى الشحن",
+        "back_to_payment_method": "الرجوع الى الدفع",
+        "choose_shipping_method": "اختر طريقة الشحن",
+        "choose_payment_method": "اختر طريقة الدفع",
+        "choose_billing_address": "اختر عنوان الدفع",
+        "contact_us_html": "تواصل معنا للمزيد من المعلومات",
+        "autocomplete_title": "اقتراحات",
+        "autocomplete_single_item": "قطعة واحدة متبقية فقط",
+        "autocomplete_multi_item": "{{number}} قطع متبقية",
+        "autocomplete_selection": "{{number}} ال {{total}}",
+        "forwarding_indicator": {
+          "new_window": "يفتح في نافذة جديدة.",
+          "external": "يفتح في نافذة خارجية.",
+          "external_and_new_window": "يفتح نافذةخارجية في نافذة جديدة."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - الدفع"
+        },
+        "tooltip_accessibility_label": "المزيد من المعلومات",
+        "title": "الدفع - {{shopName}}",
+        "full_title": "الدفع - {{pageTitle}} - {{shopName}} ",
+        "loading_title": "الدفع - {{shopName}}",
+        "display_name": "{{firstName}} {{lastName}}",
+        "google_map_title": "Google Map",
+        "confirm_order_button_label": "تأكيد الطلب",
+        "submit_order_button_label": "ارسال الطلب",
+        "back_button_label": "ارتجاع",
+        "submit": "ارسل",
+        "dates": {
+          "weekdays": {
+            "monday": "الاثنين",
+            "tuesday": "الثلثاء",
+            "wednesday": "الاربعاء",
+            "thursday": "الخميس",
+            "friday": "الجمعة",
+            "saturday": "السبت",
+            "sunday": "الاحد"
+          },
+          "weekdays_abbreviation": {
+            "monday": "الاثنين",
+            "tuesday": "الثلثاء",
+            "wednesday": "الاربعاء",
+            "thursday": "الخميس",
+            "friday": "الجمعة",
+            "saturday": "السبت",
+            "sunday": "الاحد"
+          },
+          "months": {
+            "january": "يناير",
+            "february": "فبراير",
+            "march": "مارس ",
+            "april": "أبريل",
+            "may": "مايو",
+            "june": "يونيو",
+            "july": "يوليو",
+            "august": "أغسطس",
+            "september": "سبتمبر",
+            "october": "أكتوبر",
+            "november": "نوفمبر",
+            "december": "ديسمبر"
+          }
+        }
+      },
+      "contact": {
+        "title": "معلومات",
+        "address_title": "العنوان",
+        "contact_method_title": "تواصل",
+        "email_label": "البريد الالكتروني",
+        "email_placeholder": "البريد الالكتروني",
+        "email_or_phone_label": "البريد الالكتروني او رقم الهاتف",
+        "email_or_phone_placeholder": "البريد الالكتروني او رقم الهاتف",
+        "first_name_label": "الاسم الاول",
+        "optional_first_name_label": "الاسم الاول (اختياري)",
+        "last_name_label": "الاسم الاخير",
+        "company_label": "الشركة",
+        "company_attention_label": "الشركة",
+        "optional_company_attention_label": "الشركة (اختياري)",
+        "optional_company_label": "الشركة (اختياري)",
+        "address1_label": "العنوان",
+        "address2_label": "الشقة",
+        "optional_address2_label": "الشقة (اختياري)",
+        "city_label": "المدينة",
+        "country_label": "الدولة",
+        "country_code": "رقم الدولة",
+        "emirate_label": "الامارة",
+        "emirate_placeholder": "الامارة",
+        "phone_label": "الهاتف",
+        "optional_phone_label": "الهاتف (اختياري)",
+        "phone_placeholder": "الهاتف",
+        "postal_code_label": "رقم البريد",
+        "optional_postal_code_label": "رقم البريد (اختياري)",
+        "postal_code_placeholder": "رقم البريد",
+        "postcode_label": "رقم البريد",
+        "optional_postcode_label": "رقم البريد (اختياري)",
+        "postcode_placeholder": "البريد",
+        "pincode_label": "الرقم السري",
+        "optional_pincode_label": "الرقم السري (اختياري)",
+        "pincode_placeholder": "الرقم السري"
+      },
+      "delivery_options": {
+        "ship": "اشحن",
+        "ship_to_address": "اشحن الى العنوان",
+        "shipping_address": "عنوان الشحن",
+        "free_total_label": "مجاني"
+      },
+      "customer_account": {
+        "sign_in_link_label": "تسجيل الدخول",
+        "sign_out_link_label": "الخروج"
+      },
+      "stock": {
+        "product_column_header": "المنتجات",
+        "quantity_column_header": "العدد",
+        "price_column_header": "السعر",
+        "removed_from_cart_notice": "تم الازالة من عربة التسوق",
+        "remove_from_cart_button_label": "تم الازالة من عربة التسوق",
+        "continue_shopping_button_label": "استمر",
+        "go_back_to_cart_button_label": "ارجع الى عربة التسوق",
+        "remove": "ازالة",
+        "return_to_store_label": "العودة الى المتجر",
+        "continue_cta_label": "استمر بالدفع"
+      },
+      "order_summary": {
+        "free_shipping_discount_label": "الشحن مجاني",
+        "subtotal_label": "المجموع",
+        "shipping_label": "الشحن",
+        "order_total_label": "مجموع الطلب",
+        "total_label": "المجموع",
+        "partial_total_label": "المجموع",
+        "price_label": "السعر",
+        "quantity_label": "العدد",
+        "product_change_label": "تغيير",
+        "product_image_quantity_label": "العدد",
+        "expand_order_summary": "عرض ملخص الطلب",
+        "collapse_order_summary": "اخفاء ملخص الطلب",
+        "discount_discovery": {
+          "add_code": "اضافة الخصم"
+        },
+        "free_total_label": "مجاني",
+        "free_shipping_total_label": "مجاني",
+        "paid_label": "تم الدفع",
+        "price_before_discount_aria_text": "السعر قبل الخصم",
+        "price_after_discount_aria_text": "السعر بعد الخصم",
+        "discount_code_aria_text": "رمز الخصم",
+        "pickup_label": "الاستلام من المتجر",
+        "discount_label": "رمز الخصم",
+        "discount_placeholder": "رمز الخصم",
+        "discount_code_applied": "تم ادخال رمز الخصم",
+        "gift_card_applied": "تم ادخال بطاقة الهدايا",
+        "gift_card_title": "بطاقة الهدايا",
+        "gift_card_label": "بطاقة الهدايا",
+        "gift_card_placeholder": "بطاقة الهدايا",
+        "gift_card_and_discount_title": "رمز الخصم أو بطاقة الهدايا",
+        "gift_card_and_discount_label": "رمز الخصم أو بطاقة الهدايا",
+        "gift_card_and_discount_placeholder": "رمز الخصم أو بطاقة الهدايا",
+        "remove_discount_label": "ازالة الخصم",
+        "discount_title_stacking": {
+          "other": "رمز الخصم",
+          "one": "رمز الخصم"
+        },
+        "more_items_modal": {
+          "search_item": "البحث"
+        }
+      },
+      "shipping": {
+        "title": "الشحن",
+        "delivery_title": "التوصيل",
+        "shipping_line_phone_label": "رقم الهاتف الخلوي (مطلوب)",
+        "shipping_line_delivery_phone_label": "رقم الهاتف الخلوي",
+        "edit": "التعديل",
+        "delete": "الغاء",
+        "address_edit": "تعديل العنوان",
+        "address_delete": "الغاء العنوان",
+        "address_form": {
+          "add_address": "اضف عنوان",
+          "save": "حفظ",
+          "cancel": "الغاء"
+        },
+        "split_shipping_more_shipping_options": "المزيد من خيارات الشحن",
+        "split_shipping_option_free": "شحن مجاني",
+        "duties_and_taxes_options": {
+          "ddu_title": "ادفع عند الاستلام",
+          "ddp_title": "ادفع الان"
+        }
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "معلومات إضافية"
+        }
+      },
+      "payment": {
+        "title": "الدفع",
+        "credit_card_vaulting_sign_in_banner_button_label": "تسجيل الدخول",
+        "card_number_label": "رقم البطاقة",
+        "card_number_placeholder": "رقم البطاقة",
+        "name_on_card_label": "الاسم على البطاقة",
+        "name_on_card_placeholder": "الاسم على البطاقة",
+        "card_expired": "منتهية",
+        "card_expiry_label": "تاريخ الانتهاء (الشهر/السنة)",
+        "card_expiry_placeholder": "تاريخ الانتهاء (الشهر/السنة)",
+        "credit_card_start_month": "شهر البداية",
+        "credit_card_start_year": "سنة البداية",
+        "delete_customer_mandate_modal_confirm": "ازالة البطاقة",
+        "delete_customer_mandate_modal_cancel": "الغاء",
+        "card_verification_value_label": "رمز الحماية",
+        "card_verification_value_placeholder": "رمز الحماية",
+        "card_expiration_month_label": "شهر انتهاء الصلاحية",
+        "card_expiration_year_label": "سنة انتهاء الصلاحية",
+        "card_verification_value_explanation_amex": "رمز أمان مكون من 4 أرقام على مقدمة بطاقتك",
+        "card_verification_value_explanation_other": "رمز أمان مكون من 3 أرقام على ظهر بطاقتك",
+        "card_change_label": "تغيير",
+        "card_update_label": "تحديث البطاقة",
+        "same_billing_address_label": "نفس عنوان الشحن",
+        "google": {
+          "connect": "اضغط للتواصل مع حساب Google Pay الخاص بك"
+        },
+        "pending_payment": {
+          "multibanco": {
+            "amount": "المبلغ"
+          }
+        },
+        "update_payment_method": "تحديث طريقة الدفع",
+        "saved_credit_card_info": "آخر أربعة أرقام",
+        "edit_credit_card_modal": {
+          "fields": {
+            "card_number": "رقم البطاقة",
+            "expiry": "تاريخ انتهاء الصلاحية",
+            "security_code": "رمز الحماية",
+            "name": "الاسم على البطاقة",
+            "billing": "ارسال الايصال الى"
+          }
+        },
+        "gift_card_wrapper": {
+          "heading": "بطاقة هدايا",
+          "apply_gift_card_label": "استعمال بطاقة هدايا",
+          "apply_another_gift_card_label": "استعمال بطاقة هدايا اخرى",
+          "payment_tag": " بطاقة هدايا",
+          "add_label": "اضافة بطاقة هدايا"
+        },
+        "gift_card_checkbox_label": "استعمال بطاقة هدايا",
+        "purchase_order_number": {
+          "title": "رقم PO"
+        },
+        "payment_method": "طريقة الدفع",
+        "order_edit_banner_updated_order_label": "طلبك المعدل",
+        "gift_card_store_credit": {
+          "add_label": "ضف بطاقة الهدية او رصيد المتجر",
+          "manage_label": "عالج بطاقاة الهداية او رصيد المتجر"
+        },
+        "local_payment_method_receiver_notice": "بعد تقديم طلبك ، ستتلقى تفاصيل الدفع. قم بالدفع في ماكينة الصراف الآلي أو عبر الإنترنت في غضون {{dueDays}} يوما.",
+        "order_edit_banner_title": "مطلوب دفع {{amount_owed}}",
+        "order_edit_banner_single_item_added": "تم الاضافة",
+        "order_edit_banner_multiple_items_added": "تم اضافة {{amount}}",
+        "order_edit_banner_single_item_removed": "تم الحذف",
+        "order_edit_banner_multiple_items_removed": "حذف  {{amount}}",
+        "order_edit_banner_single_item_returned": "مرتجع",
+        "saved_credit_card_actions": {
+          "edit": "عدل",
+          "delete": "الغاء"
+        },
+        "saved_credit_cards_modal": {
+          "done": "تم",
+          "cancel": "الغاء"
+        },
+        "change_currency_section_description": "حدد خيار العملة",
+        "delete_customer_mandate_modal_title": "ازالة هذه البطاقة"
+      },
+      "billing": {
+        "edit": "تعديل",
+        "delete": "الغاء",
+        "address_edit": "تعديل العنوان",
+        "address_delete": "حذف العنوان",
+        "address_confirm": "هل أنت متأكد من أنك تريد حذف هذا العنوان من حسابك؟",
+        "address_form": {
+          "add_address": "ضف العنوان ",
+          "save": "حفظ",
+          "cancel": "الغاء"
+        },
+        "billing_address_title": "ارسال الايصال الى",
+        "same_as_shipping": "ذات عنوان الشحن",
+        "add_address": "استخدم عنوان اخر"
+      },
+      "company_location": {
+        "location_title": "العنوان"
+      },
+      "payment_summary": {
+        "free_label": "مجاني",
+        "billing_address_title": "عنوان ارسال الفاتورة"
+      },
+      "field_errors": {
+        "handle_phone_invalid": "أدخل رقم هاتف صحيح",
+        "handle_email_invalid": "أدخل بريد الكتروني صحيح",
+        "email_invalid": "أدخل بريد الكتروني صحيح",
+        "email_or_phone_blank": "أدخل رقم هاتف او بريد الكتروني ",
+        "email_or_phone_invalid": "أدخل رقم هاتف او بريد الكتروني صحيح",
+        "address_first_name_blank": "ادخل اسم اول",
+        "address_last_name_blank": "ادخل اسم العائلة",
+        "address_address1_blank": "ادخل العنوان",
+        "address_city_blank": "ادخل مدينة",
+        "email_blank": "أدخل بريد إلكتروني",
+        "phone_blank": "أدخل رقم هاتف",
+        "sms_marketing_phone_invalid": "أدخل رقم هاتف صحيح"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "الخروج السريع",
+        "or": "او",
+        "or_pay_another_way": "أو ادفع بطريقة أخرى",
+        "or_check_out_another_way": "أو الخروج بطريقة أخرى",
+        "or_pay_with_credit_card": "أو ادفع بالبطاقة"
+      },
+      "post_purchase": {
+        "escape_confirmation": "قد تم دفع طلبك",
+        "escape_action": "اظهر تأكيد طلبك"
+      },
+      "processing": {
+        "continue_to_payment_gateway_button_label": "الاستمرار في الدفع",
+        "page_title": "معالجة طلبك",
+        "title": "معالجة طلبك",
+        "your_order_has_been_received_title": "شكرا لطلبك",
+        "wait": {
+          "short": "يتم معالجة طلبك",
+          "long": "ستتلقى رسالة بريد الكتروني بمجرد معالجة طلبك. يوجد حاليا حجم كبير من الطلبات."
+        }
+      },
+      "failed_payment": {
+        "page_title": "تعذر معالجة الدفع",
+        "title": "تعذر معالجة الدفع",
+        "payment_not_processed_title": "تعذر معالجة الدفع",
+        "return_to_cart_button_label": "العودة إلى سلة التسوق"
+      },
+      "thank_you": {
+        "title": "شكرا لك على الشراء!",
+        "return_to_store_link_label": "مواصلة التسوق",
+        "payment_information_title": "معلومات الدفع",
+        "shipping_information_title": "معلومات الشحن",
+        "page_title_no_name": "شكراً",
+        "cancelled_page_title": "تم الغاء الطلب",
+        "failed_pending_payment_page_title": "هناك مشكلة في دفعك",
+        "customer_information_title": "تفاصيل الطلب",
+        "contact_information_title": "معلومات الاتصال",
+        "company_location_title": "العنوان",
+        "shipping_address_title": "عنوان الشحن",
+        "payment_method_title": "طريقة الدفع",
+        "shipping_method_title": "طريقة الشحن",
+        "confirmed": "تم التأكيد",
+        "thank_you_title": "تم تأكيد طلبك",
+        "thank_you_title_payment": "تم تأكيد دفعك",
+        "thank_you_title_payments_app_pending_default": "يتم تأكيد دفعك",
+        "thank_you_title_payments_app_pending_buyer_action_required": "تم استلام طلبك",
+        "confirmed_title": "تم تأكيد طلبك",
+        "ready_for_delivery_title": "طلبك جاهز للشحن",
+        "ready_for_delivery_description": "قمنا بتحضير طلبك",
+        "out_for_delivery_local_description_html": "سيصل طلبك قريبا.",
+        "contact_us": "تواصل معنا",
+        "contact_us_lowercase": "تواصل معنا",
+        "order_number_label": "رقم الطلب",
+        "marker": {
+          "shipping": "عنوان التوصيل"
+        },
+        "fulfillment": {
+          "quantity_label": "العدد"
+        },
+        "breadcrumbs_confirmed": "تم التأكيد",
+        "missing_shipping_address_banner": {
+          "contact_us": "تواصل معنا"
+        },
+        "first_payment_complete": "تم تأكيد الدفعة الاولى",
+        "billing_address_title": "عنوان ارسال الفاتورة",
+        "tracking_number": "رقم تتبع الطلب",
+        "estimated_arrival": "تاريخ التوصيل المتوقع",
+        "confirmation_email_sent_text": "تم ارسال بريد الكتروني",
+        "print_link_label": "طبع الايصال",
+        "page_title": "شكراً %{display_name}!"
+      },
+      "review": {
+        "blocks": {
+          "contact_method_title": "تواصل",
+          "shipping_address_title": "اشحن الى",
+          "shipping_method_title": "طريقة الشحن",
+          "payment_method_title": "طريقة الدفع"
+        }
+      },
+      "marketing": {
+        "sms": {
+          "mobile_phone_number": "رقم الهاتف الخلوي"
+        }
+      },
+      "shop_policies": {
+        "refund_policy": "سياسة الاسترجاع",
+        "privacy_policy": "سياسة الخصوصية",
+        "terms_of_service": "شروط الخدمة",
+        "shipping_policy": "سياسة الشحن"
+      },
+      "customer_payment_methods": {
+        "page_title": "طرق الدفع"
+      },
+      "payment_gateway": {
+        "login_prompt": {
+          "no_access": {
+            "link": "تسجيل الدخول"
+          }
+        }
+      }
+    },
+    "addresses": {
+      "region": "المنطقة",
+      "emirate": "الامارة"
+    },
+    "page_titles": {
+      "account": "حسابك",
+      "create_account": "إنشاء حساب",
+      "reset_account": "اعادة إنشاء حساب",
+      "addresses": "عناوين",
+      "order": "طلب %{name}",
+      "search": "ابحث"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "عربة التسوق",
+      "remove": "ازالة",
+      "subtotal": "المجموع",
+      "discounts": "تخفيضات",
+      "update": "تحديث عربة التسوق ",
+      "checkout": "انهاء"
+    },
+    "label": {
+      "quantity": "عدد",
+      "total": "المجموع"
+    }
+  }
+}

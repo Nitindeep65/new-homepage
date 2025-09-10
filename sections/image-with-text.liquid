@@ -1,0 +1,344 @@
+{%- liquid
+  assign layout = section.settings.layout
+  assign image_position = section.settings.image_position
+  assign content_position = section.settings.content_position
+-%}
+
+<section class="image-with-text image-with-text--{{ layout }}" data-section-id="{{ section.id }}">
+  <div class="container">
+    <div class="image-with-text__grid">
+      <div class="image-with-text__media">
+        {%- if section.settings.image != blank -%}
+          <div class="image-with-text__image image-position--{{ image_position }}">
+            <img 
+              src="{{ section.settings.image | image_url: width: 800 }}"
+              alt="{{ section.settings.image.alt | escape }}"
+              width="{{ section.settings.image.width }}"
+              height="{{ section.settings.image.height }}"
+              loading="lazy"
+              class="img-responsive"
+            >
+          </div>
+        {%- else -%}
+          <div class="image-with-text__placeholder">
+            <svg width="100%" height="400" viewBox="0 0 800 400" fill="none">
+              <rect width="800" height="400" fill="#f3f3f3"/>
+              <text x="400" y="200" text-anchor="middle" fill="#999">Add an image</text>
+            </svg>
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="image-with-text__content content-position--{{ content_position }}">
+        <div class="image-with-text__text">
+          {%- if section.settings.title != blank -%}
+            <h2 class="image-with-text__title">{{ section.settings.title }}</h2>
+          {%- endif -%}
+          
+          {%- if section.settings.text != blank -%}
+            <div class="image-with-text__description">
+              {{ section.settings.text }}
+            </div>
+          {%- endif -%}
+          
+          {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+            <div class="image-with-text__button">
+              <a href="{{ section.settings.button_link }}" class="btn btn--primary">
+                {{ section.settings.button_text }}
+              </a>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .image-with-text {
+    padding: 4rem 0;
+    background: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .image-with-text__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    min-height: 500px;
+  }
+  
+  .image-with-text--image_first .image-with-text__media {
+    order: 1;
+  }
+  
+  .image-with-text--image_first .image-with-text__content {
+    order: 2;
+  }
+  
+  .image-with-text--text_first .image-with-text__media {
+    order: 2;
+  }
+  
+  .image-with-text--text_first .image-with-text__content {
+    order: 1;
+  }
+  
+  .image-with-text__media {
+    position: relative;
+  }
+  
+  .image-with-text__image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .image-position--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-with-text__placeholder {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+  }
+  
+  .image-with-text__content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-position--top {
+    justify-content: flex-start;
+  }
+  
+  .content-position--middle {
+    justify-content: center;
+  }
+  
+  .content-position--bottom {
+    justify-content: flex-end;
+  }
+  
+  .image-with-text__text {
+    max-width: 500px;
+  }
+  
+  .image-with-text__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #333;
+    line-height: 1.2;
+  }
+  
+  .image-with-text__description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .image-with-text__description p {
+    margin-bottom: 1rem;
+  }
+  
+  .image-with-text__description p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .image-with-text__button {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #007cba;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn--primary:hover {
+    background: #005a87;
+    transform: translateY(-2px);
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .image-with-text__grid {
+      gap: 3rem;
+    }
+    
+    .image-with-text__title {
+      font-size: 2.25rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-with-text {
+      padding: 3rem 0;
+    }
+    
+    .image-with-text__grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      min-height: auto;
+    }
+    
+    .image-with-text--image_first .image-with-text__media,
+    .image-with-text--text_first .image-with-text__media {
+      order: 1;
+    }
+    
+    .image-with-text--image_first .image-with-text__content,
+    .image-with-text--text_first .image-with-text__content {
+      order: 2;
+    }
+    
+    .image-with-text__title {
+      font-size: 2rem;
+    }
+    
+    .image-with-text__description {
+      font-size: 1rem;
+    }
+    
+    .image-with-text__text {
+      text-align: center;
+      max-width: none;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-with-text__title {
+      font-size: 1.75rem;
+    }
+    
+    .btn {
+      padding: 0.875rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Image with Text",
+  "tag": "section",
+  "class": "image-with-text-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "Image first"
+        },
+        {
+          "value": "text_first",
+          "label": "Text first"
+        }
+      ],
+      "default": "image_first"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Content position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "middle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Image with text"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with Text"
+    }
+  ]
+}
+{% endschema %}
